@@ -28,7 +28,8 @@ import { Observable, map } from 'rxjs';
 export class MachineService {
   // 🇻🇳 Gốc API (không bao gồm query factory)
   // 🇯🇵 APIのベースURL（factoryのクエリパラメータは除外）
-  private baseUrl = 'http://192.168.1.230:3000/machine';
+  //private baseUrl = 'http://192.168.1.230:3000/machine'; //本番環境
+  private baseUrl = 'http://localhost:3000/machine'; //MVP出張中環境
 
   constructor(private http: HttpClient) {}
 
